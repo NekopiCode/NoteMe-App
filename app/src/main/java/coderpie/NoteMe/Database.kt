@@ -46,7 +46,7 @@ class NoteDatabaseHelper(context: Context) : SQLiteOpenHelper (context, DATABASE
         } catch (ex: SQLException) {
             Log.d(javaClass.simpleName, ex.toString())
         } finally {
-            //db.close()
+            db.close()
         }
     }
 }
