@@ -24,10 +24,6 @@ class Edit_Entry_Activity : AppCompatActivity() {
             val inputTitle = bindingSecond.etTitle.text.toString()
             val inputText = bindingSecond.etText.text.toString()
 
-            if (inputTitle.isBlank()) {
-                Toast.makeText(this, R.string.title_text_empty, Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
-            }
 
             val helper = databaseHelper
             helper.insertNoteTableDB(inputTitle, inputText)

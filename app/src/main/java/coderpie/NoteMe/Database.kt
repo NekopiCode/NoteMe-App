@@ -2,6 +2,7 @@ package coderpie.NoteMe
 
 import android.content.ContentValues
 import android.content.Context
+import android.database.Cursor
 import android.database.SQLException
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
@@ -48,5 +49,35 @@ class NoteDatabaseHelper(context: Context) : SQLiteOpenHelper (context, DATABASE
         } finally {
             db.close()
         }
+    }
+
+    fun getTitle() : ArrayList<String>?{
+        val db = readableDatabase
+        val cursor: Cursor = db.query(
+            NoteTableDB.TABLE_NAME, arrayOf(NoteTableDB.COLUMN_NOTE_TITEL),
+            null, null, null, null, NoteTableDB.COLUMN_NOTE_TITEL, null
+        )
+        val title = ArrayList<String>()
+        while (cursor.moveToNext()) {
+            title.add(cursor.getString(0))
+        }
+        cursor.close()
+        db.close()
+        return title
+    }
+
+    fun getText() : ArrayList<String>? {
+        val db = readableDatabase
+        val cursor: Cursor = db.query(
+            NoteTableDB.TABLE_NAME, arrayOf(NoteTableDB.COLUMN_NOTE_TEXT),
+            null, null, null, null, NoteTableDB.COLUMN_NOTE_TEXT, null
+        )
+        val title = ArrayList<String>()
+        while (cursor.moveToNext()) {
+            title.add(cursor.getString(0))
+        }
+        cursor.close()
+        db.close()
+        return title
     }
 }
