@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(bindingMain.root)
         bindingMain.recyclerViewMain.layoutManager = LinearLayoutManager(this)
 
+        /*
         val textExample = listOf(
             "Wenn du heute das Gestern nicht verarbeitet hast, kannst du auch das Morgen nicht planen.",
             "Zutrittsverbot für blockierende Gedanken, die Stau verursachen, unnötig Ärger und Stress machen.",
@@ -30,7 +31,9 @@ class MainActivity : AppCompatActivity() {
            for (i in 1..20)
                text.add(textExample.random())
 
-            //bindingMain.recyclerViewMain.adapter = NoteAdapter(title, text)
+            bindingMain.recyclerViewMain.adapter = NoteAdapter(title, text)
+
+         */
 
         val db = NoteDatabaseHelper(this)
         bindingMain.recyclerViewMain.adapter = db.getTitle()?.let { NoteAdapter(it, db.getText()!!) }

@@ -17,9 +17,6 @@ class Edit_Entry_Activity : AppCompatActivity() {
         bindingSecond = ActivityEditEntryBinding.inflate(layoutInflater)
         setContentView(bindingSecond.root)
 
-
-
-
         bindingSecond.floatingActionButton2.setOnClickListener {
             val inputTitle = bindingSecond.etTitle.text.toString()
             val inputText = bindingSecond.etText.text.toString()
