@@ -3,7 +3,7 @@ Dies ist ein Prototyp.
 
 Feature:
 
-RecyclerView, Single Ton SQLite, 2 Activities, diverse TextViews & EditViews.
+RecyclerView, Single Ton SQLite, 3 Activities, diverse Button, TextViews & EditViews.
 Features wie etwa Datum, Suche, Suche mit Hashtag, Notiz bearbeiten & Löschen wird noch hinzugefügt.
 
 Roadmap:
