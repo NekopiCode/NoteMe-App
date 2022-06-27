@@ -8,4 +8,4 @@ Features wie etwa Datum, Suche, Suche mit Hashtag, Notiz bearbeiten & Löschen w
 
 Roadmap:
 
-KW 26 - Datum und ggf. einfache Suche <-> KW 27 - Notiz Bearbeiten & Löschen <-> KW 28 - Suche mit Hashtag bwz. Gruppierung
+KW 26 - Datum und ggf. einfache Suche <--> KW 27 - Notiz Bearbeiten & Löschen <--> KW 28 - Suche mit Hashtag bwz. Gruppierung
