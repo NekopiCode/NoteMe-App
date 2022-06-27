@@ -1,6 +1,9 @@
 # NoteMe-App 
 Dies ist ein Prototyp. 
-Es enthält Single Ton SQLite, 2 Activities, diverse TextViews & EditViews.
+
+Feature:
+
+RecyclerView, Single Ton SQLite, 2 Activities, diverse TextViews & EditViews.
 Features wie etwa Datum, Suche, Suche mit Hashtag, Notiz bearbeiten & Löschen wird noch hinzugefügt.
 
 Roadmap:
